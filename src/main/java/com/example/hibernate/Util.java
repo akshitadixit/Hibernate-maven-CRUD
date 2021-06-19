@@ -9,7 +9,7 @@ public class Util {
 	
 	static{
 		try{
-			sessionFactory = new Configuration().configure("../resources/hibernate.cfg.xml").buildSessionFactory();
+			sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 
 		}catch (Throwable ex) {
 			System.err.println("Session Factory could not be created." + ex);
